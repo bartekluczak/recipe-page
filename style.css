@@ -1,0 +1,26 @@
+:root {
+  /* COLORS */
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+  --brown-800: #854632;
+  --white: #fff;
+  /* TYPOGRAPHY */
+  --font-preset-1: 400 2.5rem/100% "Young Serif", sans-serif;
+  --font-preset-2: 400 1.75rem/100% "Young Serif", sans-serif;
+  --font-preset-3: 600 1.25rem/100% "Outfit", sans-serif;
+  --font-preset-4: 400 1rem/150% "Outfit", sans-serif;
+  --font-preset-4-bold: 700 1rem/150% "Outfit", sans-serif;
+  /* SPACING */
+  --spacing-1600: 8rem;
+  --spacing-600: 3rem;
+  --spacing-500: 2.5rem;
+  --spacing-400: 2rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.5rem;
+}
