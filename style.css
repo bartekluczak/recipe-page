@@ -57,3 +57,14 @@ article {
 .section-nutrition {
   padding-block-start: var(--spacing-400);
 }
+ol,
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+}
+h1 {
+}
+h2 {
+  padding-block-end: var(--spacing-300);
+}
