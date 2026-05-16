@@ -35,12 +35,17 @@ article {
 .img-omlette {
   width: 100%;
 }
-.recipe-title {
-  font: var(--font-mobile-preset-1);
-}
 .description {
   padding-block-start: var(--spacing-300);
   padding-block-end: var(--spacing-400);
+  font: var(--font-preset-4);
+  color: var(--stone-600);
+}
+strong {
+  font: var(--font-preset-4-bold);
+  color: var(--stone-600);
+}
+span {
   font: var(--font-preset-4);
   color: var(--stone-600);
 }
@@ -59,46 +64,60 @@ article {
 .section-nutrition {
   padding-block-start: var(--spacing-400);
 }
+.section-nutrition p {
+  font: var(--font-preset-4);
+  color: var(--stone-600);
+  padding-block-end: var(--spacing-300);
+}
 /* LIST */
 ol,
 ul {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-100);
-  padding: 0;
 }
-li {
-  font: var(--font-preset-4);
-  color: var(--stone-600);
-  list-style: none;
-  display: flex;
-  align-items: center;
+ul {
+  padding-inline-start: var(--spacing-300);
 }
-
-ul li::before {
-  content: "";
-  width: 4px;
-  height: 4px;
-  background: var(--rose-800);
-  border-radius: 50%;
-  display: inline-block;
-  margin-inline-start: var(--spacing-100);
-  margin-inline-end: var(--spacing-200);
-  flex-shrink: 0;
+li,
+ol {
+  padding-inline-start: var(--spacing-200);
 }
-
-strong {
-  margin-right: 4px;
+.section-preparation-time li::marker {
+  color: var(--rose-800);
 }
-
+.section-ingredients li::marker {
+  color: var(--brown-800);
+}
+.section-instruction li::marker {
+  color: var(--brown-800);
+  font: var(--font-preset-4-bold);
+}
 /* HEADERS */
-h1 {
+.recipe-title {
+  font: var(--font-mobile-preset-1);
 }
+
 h2 {
+  font: var(--font-preset-2);
+  color: var(--brown-800);
   padding-block-end: var(--spacing-300);
 }
 h3 {
   font: var(--font-preset-3);
   color: var(--brown-800);
   padding-block-end: var(--spacing-200);
+}
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  padding-inline: var(--spacing-400);
+  padding-block: var(--spacing-150);
+}
+
+tr:not(:last-child) td {
+  border-bottom: 1px solid #ddd;
 }
