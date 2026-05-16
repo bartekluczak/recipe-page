@@ -41,6 +41,8 @@ article {
 .description {
   padding-block-start: var(--spacing-300);
   padding-block-end: var(--spacing-400);
+  font: var(--font-preset-4);
+  color: var(--stone-600);
 }
 .section-preparation-time {
   padding: var(--spacing-300);
@@ -57,14 +59,46 @@ article {
 .section-nutrition {
   padding-block-start: var(--spacing-400);
 }
+/* LIST */
 ol,
 ul {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-100);
+  padding: 0;
 }
+li {
+  font: var(--font-preset-4);
+  color: var(--stone-600);
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+ul li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: var(--rose-800);
+  border-radius: 50%;
+  display: inline-block;
+  margin-inline-start: var(--spacing-100);
+  margin-inline-end: var(--spacing-200);
+  flex-shrink: 0;
+}
+
+strong {
+  margin-right: 4px;
+}
+
+/* HEADERS */
 h1 {
 }
 h2 {
   padding-block-end: var(--spacing-300);
+}
+h3 {
+  font: var(--font-preset-3);
+  color: var(--brown-800);
+  padding-block-end: var(--spacing-200);
 }
