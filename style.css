@@ -52,6 +52,7 @@ span {
 .section-preparation-time {
   padding: var(--spacing-300);
   background: var(--rose-50);
+  border-radius: 12px;
 }
 .section-ingredients {
   padding-block: var(--spacing-400);
