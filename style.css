@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root {
   /* COLORS */
   --rose-800: #7a284e;
@@ -118,7 +119,28 @@ td {
   padding-inline: var(--spacing-400);
   padding-block: var(--spacing-150);
 }
-
 tr:not(:last-child) td {
   border-bottom: 1px solid #ddd;
+}
+/* DESKTOP */
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    padding-block: var(--spacing-1600);
+    background-color: var(--stone-100);
+  }
+  .img-box {
+    padding-inline: var(--spacing-500);
+    padding-block-start: var(--spacing-500);
+  }
+  .img-omlette {
+    border-radius: 12px;
+    display: block;
+  }
+  .container {
+    max-width: 616px;
+    background-color: var(--white);
+    border-radius: 24px;
+  }
 }
