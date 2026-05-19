@@ -33,7 +33,7 @@ article {
   padding-block: var(--spacing-500);
   padding-inline: var(--spacing-400);
 }
-.img-omlette {
+.img-omelette {
   width: 100%;
 }
 .description {
@@ -42,11 +42,11 @@ article {
   font: var(--font-preset-4);
   color: var(--stone-600);
 }
-strong {
+.content-bold {
   font: var(--font-preset-4-bold);
   color: var(--stone-600);
 }
-span {
+.content {
   font: var(--font-preset-4);
   color: var(--stone-600);
 }
@@ -59,7 +59,7 @@ span {
   padding-block: var(--spacing-400);
   border-bottom: 1px solid var(--stone-150);
 }
-.section-instruction {
+.section-instructions {
   padding-block: var(--spacing-400);
   border-bottom: 1px solid var(--stone-150);
 }
@@ -120,7 +120,7 @@ td {
 tr:not(:last-child) td {
   border-bottom: 1px solid #ddd;
 }
-/* DESKTOP */
+/* TABLET */
 @media screen and (min-width: 600px) {
   body {
     display: flex;
@@ -132,7 +132,7 @@ tr:not(:last-child) td {
     padding-inline: var(--spacing-500);
     padding-block-start: var(--spacing-500);
   }
-  .img-omlette {
+  .img-omelette {
     border-radius: 12px;
     display: block;
   }
@@ -140,5 +140,10 @@ tr:not(:last-child) td {
     max-width: 616px;
     background-color: var(--white);
     border-radius: 24px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .container {
+    max-width: 736px;
   }
 }
