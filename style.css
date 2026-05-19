@@ -88,7 +88,7 @@ ol {
 .section-preparation-time li::marker {
   color: var(--rose-800);
 }
-.section-instruction,
+.section-instructions,
 .section-ingredients li::marker {
   color: var(--brown-800);
   font: var(--font-preset-4-bold);
